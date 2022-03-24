@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/margin_small"
+    android:layout_marginTop="@dimen/margin_small"
+    android:layout_marginBottom="@dimen/margin_small">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/padding_small"
+        android:layout_marginTop="@dimen/padding_large"
+        android:layout_marginEnd="@dimen/padding_small"
+        android:layout_marginBottom="@dimen/padding_large"
+        android:labelFor="@+id/emailField"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:labelFor="@+id/emailField"
+            android:paddingTop="@dimen/padding_large"
+            android:paddingBottom="@dimen/padding_small"
+            android:text="@string/email"
+            tools:text="@string/email" />
+
+        <EditText
+            android:id="@+id/emailField"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_weight="1"
+            android:autofillHints="@string/email"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:paddingTop="@dimen/padding_small"
+            android:paddingBottom="@dimen/padding_large"
+            tools:ignore="DuplicateSpeakableTextCheck"
+            tools:text="raveendra@raveerocks.io" />
+
+        <TextView
+            android:id="@+id/passwordLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:labelFor="@+id/passwordField"
+            android:paddingTop="@dimen/padding_large"
+            android:paddingBottom="@dimen/padding_small"
+            android:text="@string/password"
+            tools:text="@string/password" />
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/password"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/padding_small"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingEnd="@dimen/padding_small"
+            android:paddingBottom="@dimen/margin_large"
+            tools:ignore="DuplicateSpeakableTextCheck"
+            tools:text="@string/password" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/signInButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_weight="1"
+                android:paddingStart="@dimen/padding_large"
+                android:paddingTop="@dimen/padding_large"
+                android:paddingEnd="@dimen/padding_small"
+                android:paddingBottom="@dimen/padding_large"
+                android:text="@string/sign_in" />
+
+            <Button
+                android:id="@+id/signUpButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_weight="1"
+                android:paddingStart="@dimen/padding_small"
+                android:paddingTop="@dimen/padding_large"
+                android:paddingEnd="@dimen/padding_large"
+                android:paddingBottom="@dimen/padding_large"
+                android:text="@string/sign_up" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
