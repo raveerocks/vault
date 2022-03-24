@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="io.raveerocks.vault.screens.LoginFragment"
+        android:name="io.raveerocks.vault.screens.login.LoginFragment"
         android:label="LoginFragment"
         tools:layout="@layout/fragment_login">
         <action
@@ -22,7 +22,7 @@
     </fragment>
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="io.raveerocks.vault.screens.WelcomeFragment"
+        android:name="io.raveerocks.vault.screens.welcome.WelcomeFragment"
         android:label="WelcomeFragment"
         tools:layout="@layout/fragment_welcome">
         <action
@@ -31,8 +31,8 @@
     </fragment>
     <fragment
         android:id="@+id/instructionFragment"
-        android:name="io.raveerocks.vault.screens.InstructionFragment"
+        android:name="io.raveerocks.vault.screens.instruction.InstructionFragment"
         android:label="InstructionFragment"
-        tools:layout="@layout/fragment_instruction"/>
+        tools:layout="@layout/fragment_instruction" />
 
 </navigation>

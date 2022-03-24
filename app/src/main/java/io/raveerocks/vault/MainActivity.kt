@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        if (true){ // TODO : Login Check
+        if (true) { // TODO : Login Check
             setContentView(R.layout.activity_main)
         }
     }

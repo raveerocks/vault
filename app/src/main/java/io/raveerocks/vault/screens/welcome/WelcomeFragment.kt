@@ -1,4 +1,4 @@
-package io.raveerocks.vault.screens
+package io.raveerocks.vault.screens.welcome
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,16 +10,18 @@ import androidx.navigation.findNavController
 import io.raveerocks.vault.R
 import io.raveerocks.vault.databinding.FragmentWelcomeBinding
 
-class WelcomeFragment:Fragment() {
+class WelcomeFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding: FragmentWelcomeBinding = DataBindingUtil.inflate(inflater,R.layout.fragment_welcome,container,false)
-        binding.nextButton.setOnClickListener(){
-            it.findNavController().navigate(WelcomeFragmentDirections.actionWelcomeFragmentToInstructionFragment())
+        val binding: FragmentWelcomeBinding =
+            DataBindingUtil.inflate(inflater, R.layout.fragment_welcome, container, false)
+        binding.nextButton.setOnClickListener {
+            it.findNavController()
+                .navigate(WelcomeFragmentDirections.actionWelcomeFragmentToInstructionFragment())
         }
         return binding.root
     }
