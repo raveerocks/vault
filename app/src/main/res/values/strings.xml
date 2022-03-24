@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Vault</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="emailField">Email Label</string>
+    <string name="passwordField">Password Field</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
 </resources>
