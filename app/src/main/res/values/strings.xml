@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Vault</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="emailField">Email Label</string>
+    <string name="passwordField">Password Field</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="welcome_para1">
+        Vault is the simplest way to store your tickets, coupons, gift cards and much more in one place.
+        With Vault you can simply scan your phone to redeem a coupon or check in for a flight.
+        Browse through our list of partners to find more.
+    </string>
+    <string name="next">Next</string>
 </resources>
