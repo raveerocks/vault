@@ -13,16 +13,19 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="io.raveerocks.vault.screens.login.LoginFragment"
+        android:name="io.raveerocks.vault.screens.auth.LoginFragment"
         android:label="LoginFragment"
         tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_loginFragment_to_welcomeFragment"
             app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_listFragment"
+            app:destination="@id/listFragment" />
     </fragment>
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="io.raveerocks.vault.screens.welcome.WelcomeFragment"
+        android:name="io.raveerocks.vault.screens.onboarding.WelcomeFragment"
         android:label="WelcomeFragment"
         tools:layout="@layout/fragment_welcome">
         <action
@@ -31,8 +34,26 @@
     </fragment>
     <fragment
         android:id="@+id/instructionFragment"
-        android:name="io.raveerocks.vault.screens.instruction.InstructionFragment"
+        android:name="io.raveerocks.vault.screens.onboarding.InstructionFragment"
         android:label="InstructionFragment"
-        tools:layout="@layout/fragment_instruction" />
+        tools:layout="@layout/fragment_instruction" >
+        <action
+            android:id="@+id/action_instructionFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="io.raveerocks.vault.screens.home.HomeFragment"
+        android:label="ListFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_listFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="io.raveerocks.vault.screens.home.DetailFragment"
+        android:label="DetailFragment"
+        tools:layout="@layout/fragment_detail"/>
 
 </navigation>

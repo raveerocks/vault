@@ -1,4 +1,4 @@
-package io.raveerocks.vault.screens.login
+package io.raveerocks.vault.screens.auth
 
 import android.os.Bundle
 import android.text.Editable
